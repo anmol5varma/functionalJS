@@ -10,9 +10,12 @@ function getShortMessage(messages){
 let obj1 = [	{message: 'Hello my name is anmol varma.'},
 							{message: 'asdjioajsiofdasofoasdfoafkadfoadhfjadfuaoasfoasfaifiafadfocdjshkfks'},
 							{message: 'Hello.'}];
+let result1 = [	{message: 'Hello my name is anmol varma.'},
+							{message: 'Hello.'}];
 let obj2 = [	{message: 'asdjioajsiofdasofoasdfoafkadfoadhfjadfuaoasfoasfaifiafadfocdjshkfks'},
 							{message: 'asdjioajsiofdasofoasdfoafkadfoadhfjadfuaoasfoasfaifiafadfocdjshkfks'},
 							{message: 'asdjioajsiofdasofoasdfoafkadfoadhfjadfuaoasfoasfaifiafadfocdjshkfks'}];
-console.log(getShortMessage(obj1));
-console.log(getShortMessage(obj2));
+let result2 = [];
+console.log( JSON.stringify(getShortMessage(obj1)) === JSON.stringify(result1) );
+console.log( JSON.stringify(getShortMessage(obj2)) === JSON.stringify(result2) );
 module.exports = getShortMessage;

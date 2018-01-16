@@ -17,6 +17,10 @@ let submittedUsers = [
 			{ id: 2 },
 			{ id: 1 }
 		];
-console.log(checkUsersValid(gU));
-
+console.log(checkUsersValid(gU)===true);
+submittedUsers = [
+			{ id: 6 },
+			{ id: 1 }
+		];
+console.log(checkUsersValid(gU)===false);
 module.exports = checkUsersValid;
