@@ -8,6 +8,6 @@ function doubleAll(numbers){
 }
 module.exports = doubleAll;
 let arr = [1, 2, 3, 4, 5];
-console.log(doubleAll(arr));
-console.log(doubleAll(arr.slice(1,3)));
-console.log(doubleAll([]));
+console.log(doubleAll(arr).toString() === [2,4,6,8,10].toString());
+console.log(doubleAll(arr.slice(1,3)).toString() === [4,6].toString());
+console.log(doubleAll([]).toString() === '');

@@ -6,5 +6,5 @@ function upperCase( input ){
 //console.log(upperCase(123));;
 //console.log(upperCase(true));;
 //console.log(upperCase([1,2,3,4,5]));;
-console.log(upperCase('yo.'));
+console.log(upperCase('yo.')==='YO.');
 module.exports = upperCase;
