@@ -1,4 +1,4 @@
-function checkUsersValid(goodUsers, submittedUsers){
+function checkUsersValid(goodUsers){
   return function allUsersValid(submittedUsers){
     return submittedUsers.every( function(users){
       return goodUsers.some( function(user){

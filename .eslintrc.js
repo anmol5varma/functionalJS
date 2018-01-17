@@ -3,7 +3,7 @@ module.exports = {
        "browser": true,
        "es6": true
    },
-   // "extends": "eslint:recommended",
+   "extends": "eslint:recommended",
    "parserOptions": {
        "sourceType": "module"
    },
@@ -13,6 +13,7 @@ module.exports = {
        ],
        "no-var": "error",
        "no-console": 0,
+       "no-undef": 0,
        "linebreak-style": [
            "error",
            "unix"
