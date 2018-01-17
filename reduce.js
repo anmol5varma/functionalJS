@@ -18,4 +18,6 @@ let result = {'anmol': 2,
 let result1 = {'': 3};
 console.log( JSON.stringify(countWords(list)) === JSON.stringify(result) );
 console.log( JSON.stringify(countWords(list1)) === JSON.stringify(result1) );
+let ll = ['apple', 'apple'];
+console.log(countWords(ll));
 module.exports = countWords;
