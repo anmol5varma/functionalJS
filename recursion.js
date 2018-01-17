@@ -1,10 +1,21 @@
 function fn(prev, curr, index, arr){
-  if(arr.length===0){
-    initial[curr]++;
+  return prev + curr;
+}
+
+function reduce(arr, fn, initial){
+  let result = initial;
+  if(arr.length === 0){
+    return result;
   }
   else{
-    fu(prev, curr, index, arr);
+    result = fn(initial, arr[0], 0, arr);
+    return reduce(arr.slice(1),fn,result);
   }
 }
-module.exports = function reduce(arr, fn, initial){
-};
+
+console.log(reduce([1,2,3,5,6], fn, 2) === 19);
+
+console.log(reduce([], fn, 0) === 0);
+
+console.log(fn(1,2,3) === 3);
+module.exports = reduce;
