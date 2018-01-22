@@ -1,5 +1,4 @@
 function fn(prev, curr, index, arr){
-  return prev + curr;
 }
 
 function reduce(arr, fn, initial){
